@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:weightSum="100"
+    android:layout_marginTop="1dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/p_layout">
+
+    <ImageView
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/image_item"
+        android:layout_width="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:layout_height="150dp" />
+
+    <TextView
+        android:shadowDy="3"
+        android:shadowDx="7"
+        android:shadowRadius="1.0"
+        android:shadowColor="@color/transparentGray"
+        android:textSize="40dp"
+        android:textColor="@android:color/white"
+        android:textAppearance="@style/Widget.AppCompat.Light.ActionBar"
+        android:layout_marginLeft="@dimen/margin"
+        android:text="nama tanama"
+        android:layout_gravity="bottom|left"
+        android:id="@+id/nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/content"
+        android:layout_width="1dp"
+        android:layout_height="1dp" />
+
+</FrameLayout>
